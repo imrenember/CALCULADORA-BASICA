@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Basica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header> 
     <h1>Calculadora</h1>
    </header>
    <nav id="App">
-    <form name="calculator"></form>
-    <input type="textfield" name="answer" value="" autocomplete="off" readonly>
-    <input type="button" value="7">
-    <input type="button" value="8">
-    <input type="button" value="9">
-    <input type="button" value="+">
-    <br>
-    <input type="button" value="4">
-    <input type="button" value="5">
-    <input type="button" value="6">
-    <input type="button" value="-">
-    <br>
-    <input type="button" value="1">
-    <input type="button" value="2">
-    <input type="button" value="3">
-    <input type="button" value="4">
+    <form name="calculator">
+
+        <input type="textfield" id="textfield" name="answer" value="" autocomplete="off" readonly>
+        <input type="button" class="graybutton" value="7" onclick="document.calculator.answer.value+='7'">
+        <input type="button" value="8" onclick="document.calculator.answer.value+='8'">
+        <input type="button" value="9" onclick="document.calculator.answer.value+='9'">
+        <input type="button" value="+" onclick="document.calculator.answer.value+='+'">
+        <br>
+        <input type="button" value="4" onclick="document.calculator.answer.value+='4'">
+        <input type="button" value="5" onclick="document.calculator.answer.value+='5'">
+        <input type="button" value="6" onclick="document.calculator.answer.value+='6'">
+        <input type="button" value="-" onclick="document.calculator.answer.value+='-'">
+        <br>
+        <input type="button" value="1" onclick="document.calculator.answer.value+='1'">
+        <input type="button" value="2" onclick="document.calculator.answer.value+='2'">
+        <input type="button" value="3" onclick="document.calculator.answer.value+='3'">
+        <input type="button" value="x" onclick="document.calculator.answer.value+='*'">
+         <br>
+        <input type="button" value="0" onclick="document.calculator.answer.value+='0'">
+        <input type="reset" value="C">
+        <input type="button" value="=" onclick="document.calculator.answer.value=eval(document.calculator.answer.value)">
+        <input type="button" value="/" onclick="document.calculator.answer.value+='/'">
+    
+
+    </form>
+  
 
    </nav>
 </body>

@@ -1,0 +1,63 @@
+#App{
+    padding: 2%;
+    height: 410px;
+    width: 310px;
+    border: 1px solid black;
+    border-radius: 5%;
+    color: white;
+    background-color: black;
+    justify-content: center;
+
+}
+
+#App form{
+    height:100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 2%;
+    justify-content: center;
+    
+
+}
+
+ #App form input[type=textfield] {
+ width: 90%;
+ height: 25px;
+ cursor: default;
+ font-family: 'Roboto', sans-serif;
+ background-color: rgb(0, 0, 0);
+ color: rgb(255, 255, 255);
+ padding: 5%;
+ text-align: right;
+ font-size: 50px;
+ border: 0;
+ outline: none;
+ 
+}
+#App input[type=button],[type=reset] {
+  
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 15%;
+    height: 15%;
+   
+    color: black;
+    padding: 5%;
+    text-align: center;
+    font-size: px;
+    border: 0;
+    border-radius: 100%;
+    margin: 2%;
+    justify-content: center;
+    display: flexbox;
+    
+   }
+
+
+/* {.graybutton{
+    border-radius: 5px;
+    background-color: gray;
+} */
+}
